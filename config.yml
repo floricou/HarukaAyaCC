@@ -18,7 +18,7 @@ del_cmds: False
 sw_api: 'sJN67HAsezmJVU9cYqojNrVRFJ0rQMRSdL5czojAQZOyX1AajotyqDRHMY8Qjk0Q'
 
 # Database
-database_url: "postgres://username:password@host:5432/database_name"
+database_url: "postgresql://udwpfoyzccxe2o2fndx3:5QY7pBcjTqaJv4G1GZ93@buoqsrgfgrk0gacvucxl-postgresql.services.clever-cloud.com:5432/buoqsrgfgrk0gacvucxl"
 
 # Permission
 sudo_users: [1068994499]
