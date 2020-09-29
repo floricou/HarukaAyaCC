@@ -1,0 +1,26 @@
+##############################
+# Please edit this line to "not_sample_anymore" to make the bot run
+is_example_config_or_not: "not_sample_anymore"
+##############################
+bot_token: "1322746097:AAEh9duvC3CxVWeIW_rhD7YaGhxq7Nw7ne4"
+api_key: '1647620'
+api_hash: '39d46de305fa588816f24a84fdd5d812'
+owner_id: 1068994499
+owner_username: "katarina_claes"
+message_dump: "-1001405456209"
+gban_dump: "-1001405456209"
+load: []
+no_load: []
+strict_antispam: False
+workers: 4
+deepfry_token: None
+del_cmds: False
+sw_api: 'sJN67HAsezmJVU9cYqojNrVRFJ0rQMRSdL5czojAQZOyX1AajotyqDRHMY8Qjk0Q'
+
+# Database
+database_url: "postgres://username:password@host:5432/database_name"
+
+# Permission
+sudo_users: [1068994499]
+support_users: [1068994499]
+whitelist_users: [1068994499]
