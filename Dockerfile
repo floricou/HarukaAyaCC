@@ -2,11 +2,12 @@ FROM alpine:3.4
 
 RUN apk update
 
+RUN apk python3-pip
+
 RUN apk add --no-cache \
     git \
     tzdata \
     python3 \
-    python3-pip \
     postgresql-libs \
     jpeg-dev \
     imagemagick \
