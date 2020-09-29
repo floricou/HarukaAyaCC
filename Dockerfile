@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 RUN apk update
 
-RUN apk python3-pip
+RUN apk add python3-pip --no-cache
 
 RUN apk add --no-cache \
     git \
