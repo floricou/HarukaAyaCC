@@ -46,4 +46,4 @@ COPY ./config.yml /data/HarukaAya
 WORKDIR /data/HarukaAya
 
 EXPOSE 8080
-CMD ["bash", "start.sh"]
+CMD ["bash","start.sh"]
