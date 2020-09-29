@@ -427,11 +427,6 @@ def process_update(self, update):
             self.logger.exception(
                 'An uncaught error was raised while processing the update')
 
-
-if __name__ == '__main__':
-    LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
-    tbot.start(bot_token=TOKEN)
-    main()
 app = Flask(__name__)
 api = Api(app)
 
@@ -442,4 +437,7 @@ class Greeting (Resource):
 api.add_resource(Greeting, '/') # Route_1
 
 if __name__ == '__main__':
+    LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
+    tbot.start(bot_token=TOKEN)
+    main()
     app.run('0.0.0.0','8080')
