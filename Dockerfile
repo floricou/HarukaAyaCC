@@ -9,7 +9,8 @@ RUN apk add --no-cache \
     python3-pip \
     postgresql-libs \
     jpeg-dev \
-    imagemagick
+    imagemagick \
+    bash
 
 RUN apk add --no-cache --virtual .build-deps \
     git \
