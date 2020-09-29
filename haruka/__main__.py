@@ -439,5 +439,6 @@ api.add_resource(Greeting, '/') # Route_1
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     tbot.start(bot_token=TOKEN)
-    main()
     app.run('0.0.0.0','8080')
+    main()
+    
