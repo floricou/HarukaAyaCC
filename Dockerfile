@@ -1,13 +1,12 @@
-FROM ubuntu:20.04
-
-RUN apt-get -qq update && \
-    DEBIAN_FRONTEND="noninteractive" apt-get -qq install -y git python3 python3-pip \
-    locales python3-lxml
+FROM alpine:3.4
 
 RUN apk update
 
 RUN apk add --no-cache \
     git \
+    tzdata \
+    python3 \
+    python3-pip \
     postgresql-libs \
     jpeg-dev \
     imagemagick
