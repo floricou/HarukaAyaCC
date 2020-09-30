@@ -34,8 +34,6 @@ from haruka.modules import ALL_MODULES
 from haruka import dispatcher, updater, LOGGER, TOKEN, tbot
 from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.tr_engine.strings import tld
-from flask import Flask, request
-from flask_restful import Resource, Api
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -427,18 +425,8 @@ def process_update(self, update):
             self.logger.exception(
                 'An uncaught error was raised while processing the update')
 
-app = Flask(__name__)
-api = Api(app)
-
-class Greeting (Resource):
-    def get(self):
-        return 'Hello World!'
-
-api.add_resource(Greeting, '/') # Route_1
 
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     tbot.start(bot_token=TOKEN)
-    app.run('0.0.0.0','8080')
     main()
-    
