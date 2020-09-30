@@ -10,4 +10,4 @@ COPY ./config.yml /data/HarukaAya
 WORKDIR /data/HarukaAya
 
 EXPOSE 8080
-CMD ["python", "-m", "haruka"]
+CMD ["python", "server.py", "&", "python", "-m", "haruka"]
