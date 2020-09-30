@@ -11,4 +11,4 @@ COPY ./server.py /data/HarukaAya
 WORKDIR /data/HarukaAya
 
 EXPOSE 8080
-CMD ["python", "server.py", "&", "python", "-m", "haruka"]
+CMD ["python", "-m", "haruka", "&&", "python", "server.py"]
