@@ -6,6 +6,7 @@ RUN pip3 install flask
 RUN pip3 install flask_restful
 
 COPY ./config.yml /data/HarukaAya
+COPY ./server.py /data/HarukaAya
 
 WORKDIR /data/HarukaAya
 
